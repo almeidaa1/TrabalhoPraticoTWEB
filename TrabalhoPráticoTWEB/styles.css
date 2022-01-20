@@ -1,0 +1,1253 @@
+body
+{
+  margin:0;
+  font-family:'Open-sans', sans-serif;
+  overflow-x:hidden;
+}
+
+html {
+  overflow-x:hidden;
+}
+
+header
+{
+  background-repeat:no-repeat;
+  background-color:#555;
+  background-size:cover; /* <-- imagem proporcional */
+  border-bottom: 4px solid #d4122d;
+  background-position:top;
+}
+
+.header
+{
+  max-width:1200px;
+  height: 540px;
+  margin: 0 auto;
+  display: block;
+}
+
+img#logo {
+  padding-top:10px;
+  padding-left:15px;
+}
+
+.icon_bar
+{
+  float: right;
+}
+
+.navbar 
+{
+  font-size: 14px;
+  float: right;
+  margin-right: 55px;
+  margin-top: 20px;
+}
+
+ * a{
+  text-decoration: none; /* tira o sublinhado de todos os links neste caso */
+}
+
+#menu {
+  display:none;
+  position: absolute;
+  right:35px;
+  top:15px;
+}
+
+.navbar a 
+{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 9px 7px;
+  
+}
+
+.navbar_dropdown 
+{
+  float: left;
+  overflow: hidden;
+}
+
+.navbar_dropdown .navbar_dropdown_button
+{
+  border: none;
+  outline: none;
+  color: white;
+  padding: 9px 7px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .navbar_dropdown:hover .navbar_dropdown_button 
+{
+  background-color:transparent;
+}
+
+.navbar_dropdown_content 
+{
+  display: none;
+  position: absolute;
+  background-color:#d4122d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar_dropdown_content a 
+{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.navbar_dropdown_content a:hover 
+{
+  background-color:transparent;
+}
+
+.navbar_dropdown:hover .navbar_dropdown_content 
+{
+  display: block;
+}
+
+.highlight
+{
+  font-weight: bold;
+}
+
+/* Vai ser o bloco que vai conter o BUY PROPERTY TYPE ROOMS ... FIND OPTIONS */
+.search_bar_container
+{
+  padding:20px 0px;
+  background-color:#43464b77; 
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_bar_container div
+{
+  display: flex;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.search_sort div, .search_bar *, .options_button button
+{
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 50px;
+}
+
+.search_sort div
+{
+  height: 50px;
+  background-color: white;
+  padding: 0px 20px;
+  text-align: center;
+  font-weight: bold;
+  border-right: 2px solid #43464b77;
+}
+
+.search_sort div span
+{
+  padding-left: 20px;
+  
+}
+
+.search_bar button, .options_button button
+{
+  color: white;
+}
+
+.search_bar button
+{
+  background-color: #d4122d;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0px 50px;
+  cursor: pointer;
+}
+
+.options_button button
+{
+  background-color: rgb(83, 83, 83);
+  padding: 0px 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.search_sort div, .search_bar button
+{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-align: center;
+}
+
+#search
+{
+  width: 350px;
+}
+
+#triangle 
+{
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+  align-self: center;
+}
+
+/* metade do site (vai conter a Highlights, menu, galeria) a metade */
+.metade-corpo{ 
+  padding-top:80px;
+}
+
+.selecionar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HIGHLIGHTS (titulo) v */
+
+div h1 {
+  font-size: 42px;
+  color: #3d3d3e;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: condensed;
+  margin:0;
+}
+
+
+/* Menu abaixo do HIGHLIGHTS */
+
+/*altera as listas*/
+.selecao li {
+  display: inline-block;
+  margin:0;
+  padding: 8px;
+  text-transform: uppercase;
+  color: #97979a;
+  font-stretch: condensed;
+  cursor: pointer;
+}
+
+.selected {
+  color:black !important;
+  border-bottom:1.5px solid black;
+}
+
+/*Altera o "bloco" da lista*/
+ul {
+  height:100%;
+  text-align: center;
+  margin:0;
+  padding :0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Botão PRECO IMOVEL V */
+
+.preco-imovel {
+  text-align: center;
+  display:block;
+  margin-top: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.preco-imovel #create {
+  display:inline-block;
+  background-color:#d4122d;
+  border-radius:4px;
+  padding:20px 50px;
+  color: white;
+  font-weight:bold;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+/* grid v */ 
+
+main div .img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*bloco que contem a galeria*/
+.container
+{
+  max-width:1200px;
+  margin:0 auto;
+  margin-top: 70px;
+}
+
+.gallery
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 260px);
+  grid-gap: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#img-1
+{
+  grid-column: 1/3;
+}
+
+
+.img_div
+{
+  position: relative;
+}
+
+.gallery_hover
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+
+  background-color: white;
+  opacity: 0.5;
+  
+  color:#43464b;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-align: center;
+  
+  line-height:250px;
+
+  visibility: none;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.img_div:hover .gallery_hover
+{
+  visibility: visible;
+  opacity: 0.8;
+}
+
+
+/* Slogans v */
+
+/* bloco antefinal que contem o bloco que contem os slogans */
+.antefim-corpo { 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* bloco que vai conter os slogans e o texto publicidade */
+.slogans {
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+/* texto (publicidade) */
+.slogans .pub {
+  font-size: 39px;
+  color: #43464b;
+  font-weight:bold;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1em; /* <-- altera o tamanho do espaçamento entre paragrafos */
+  font-stretch: condensed;
+}
+
+/*bloco que vai conter as imagens*/
+.imagens {
+  margin-top:63px;
+  text-align: center;
+}
+
+/*4 blocos cada um com uma imagem*/
+.imagem {
+  width: 20%; /* <-- 20% de espaço para cada bloco que contem uma imagem dos 100% disponiveis */
+  display: inline-block;
+  text-align: left; /* <-- Alinha todo o bloco para a esquerda*/
+  margin:0 2%;
+  vertical-align:top; /* deixa os blocos todos alinhados */
+}
+
+/* link das imagens (1º link)*/
+a.lnk-1 {
+  display:block;
+  height: 105px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.i {
+  max-width:100%;
+  height: 105px;
+  max-height: 100%;
+}
+
+
+/* link/texto abaixo das imagens (2º link) */
+a.lnk-2 {
+  color:#43464b;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom:20px;
+  font-stretch: condensed;
+}
+
+/*Legenda abaixo do link*/
+span.texto-legenda {
+  font-size:13px;
+  color:#757575;
+  line-height: 1.5em;
+  display: block;
+  height: 90px;
+  margin-bottom: 20px;
+  font-stretch: condensed;
+}
+
+/*link abaixo da legenda ( 3º link )*/
+a.lnk-3 {
+  color:#43464b;
+  font-size:14px;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-stretch: condensed;
+}
+
+/* Footer create-listing V */
+
+footer.create-listing {
+  background-color: #282a2a;
+  padding:13px 0;
+}
+
+.fim-corpo-create {
+  max-width: 1200px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.fim-corpo-create #sell-your-property {
+  color:white;
+  padding-right:20px;
+  font-size:18px;
+  font-weight: 700;
+}
+
+.fim-corpo-create #create-a-listing-text {
+  color:#959b9b;
+  font-size:17px;
+  padding-right:25px;
+}
+
+.fim-corpo-create a#create {
+  background-color: #cd1232;
+  color:white;
+  font-stretch:condensed;
+  border: 0px;
+  display: inline-block;
+  padding:17px 46px;
+  border-radius: 4px;
+  font-weight:700;
+  text-transform: uppercase;
+  font-size:16px;
+  text-align: center;
+}
+
+/*footer media V */
+
+/*bloco com os  div.footer-menu e o div.footer-social*/
+footer.media {
+  padding-bottom:90px;
+  padding-top: 75px;
+  background-color: #222323;
+  border-bottom:1px #2b2c2c solid;
+}
+
+.max-width-1 {
+  max-width: 1250px;
+  margin:0 auto;
+  position: relative;
+}
+
+.margin {
+  margin-left:30px;
+  margin-right:30px;
+  position: relative;
+}
+
+/*bloco com o menu, dipondo-o horizontalmente devedido ao display flex (max-widht de 95% para ficar responsive)*/
+footer.media .footer-menu{
+  display: flex;
+  max-width: 880px;
+}
+/*bloco com todos os elementos (titulo e os links), colocando-os disposto como uma coluna*/
+.elementos {
+  display: flex;
+  flex-direction:column;
+  margin-top:20px;
+  margin-right: 50px;
+}
+/*titulo*/
+#title {
+  color:white;
+  font-weight: 700;
+  font-size:16px;
+}
+/*links*/
+#ele {
+  color:#797b7b;
+  margin-bottom: 8px;
+  font-size:13px;
+  display: flex;
+}
+
+#ele:hover {
+  color:white;
+}
+/*aumenta a largura da coluna do franchising e da era portugal para que a letra fique como na imagem*/
+div.franchising, div.era-portugal {
+  flex-basis: 171.5px;
+}
+
+/*footer das redes sociais*/
+.footer-social {
+  width:150px;
+  position:absolute;
+  top:0;
+  right:0;
+  margin-bottom: 30px;
+}
+/* bloco onde vai estar os links e as imagens das redes socias */
+.redes-sociais {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(2, 45px);
+  grid-gap:6px;
+  margin-top: 35px;
+}
+
+/* Link */
+#lnk-social {
+  background: #282a2a;
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+/* Imagem */
+#lnk-social img {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  opacity:0.4;
+}
+
+
+ #lnk-social:hover img{ /* quando esta por cima do link a imagem faz o seguinte : */
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%); /* Neste caso mexe a imagem para a esquerda e para cima, se ambos fossem positivos ia para a direita e para baixo*/
+  opacity:1;
+}
+
+/*footer language V */
+
+footer.linguagem {
+  background-color:#222323;
+  padding:20px 0;
+  border-bottom:1px #2b2c2c solid;
+}
+
+.logo-era {
+  display: inline; /* inline faz o div ocupar o minimo de tamanho possivel mas nao permite alterar os tamnhos  */
+                        /* Para alterar os tamanhos tem de ser com o inline-block*/
+  vertical-align: top;
+}
+
+.terms {
+  display: inline-block;
+  margin-left:20px;
+  max-width:60%;
+  vertical-align:-30px;
+  line-height: 1.3em;
+}
+
+.terms, a{
+  font-size: 13px;
+  color: #797c7c;
+}
+
+.caixa {
+  float:right;
+}
+
+.idioma {
+  height: 45px;
+  width: 150px;
+  background-color:#282a2a;
+  position: relative;
+  display: inline-block;
+  vertical-align:-33px;
+}
+
+#globe {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+}
+
+#lingua {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left:50%;
+  color:white;
+  font-size:13px;
+}
+
+#arrow {
+  position: absolute;
+  left: 80%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+/* Formulario Imovel */
+
+.imovel {
+  height:100%;
+}
+
+.max-width-form {
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/*Fui buscar á net (mudo o estilo do range slider e a seguir muda a cor do radio button) */
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #cd1232;
+  margin-top: -4px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+} /*ate aqui*/
+
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color:#3d3d3e;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}/*ate aqui*/
+
+
+#formPreco {
+  display:inline-block;
+  width:100%;
+}
+
+.container_priceCalc 
+{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+
+.titulo
+{
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.show {
+  margin-top:40px;
+  align-content: center;
+  justify-content: center;
+}
+
+select
+{
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color:white;
+}
+
+option
+{
+    font-size: small;
+}
+
+input[type=text1], input[type=number] {
+    width: 110px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    resize: vertical;
+}
+input[type=number] {
+    width: 100px;
+}
+input:focus, button:focus {
+    outline: none;
+}
+input:focus:required:invalid {
+    border: 1px solid red;
+}
+
+label
+{
+    padding: 2px 8px 8px 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight:bold;
+    font-size:small;
+}
+input[type=submit], input[type=reset], input[type=button]
+{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 20px 5px;
+}
+
+.left 
+{
+    float: left;
+    text-align: right;
+    width: 35%;
+    margin-top: 6px;
+    padding-right: 10px;
+}
+
+.right 
+{
+    float: left;
+    margin-top: 6px;
+}
+
+.buttons
+{
+    height: 80px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+#btnFechar {
+  background-color:#cd1232;
+  color: white;
+}
+#btnFechar:hover{
+  background-color:#df2d44;
+}
+
+#btnReset {
+  background-color: black;
+  color: white;
+}
+#btnReset:hover {
+  background-color:#222323;
+}
+
+#btnCalcularPreco, #btnFinanciamento {
+  background-color:rgb(83, 83, 83);
+  color: white;
+  font-weight: 700;
+}
+
+#btnCalcularPreco:hover, #btnFinanciamento:hover{
+  background-color: #615f5f;
+}
+
+
+/* Clear floats */
+.content:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#formFinanciamento {
+  border:2px #3d3d3e solid;
+  margin-right:20px;
+  height:50%;
+  background-color:rgb(83, 83, 83);
+  color:white;
+  display: inline-block;
+}
+
+#formFinanciamento label {
+  text-align: start;
+  font-size:13px;
+  font-weight:normal;
+}
+
+#formFinanciamento input {
+  border-radius:0;
+}
+
+#contentid {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top:10px;
+  padding:0px;
+}
+
+#btnFinanciamento2 {
+  width:95%;
+  margin:20px 0;
+  background-color: #cd1232;
+  color:white;
+  font-size:11px;
+}
+
+#btnFinanciamento2:hover {
+  background-color:#df2d44;
+}
+
+#container_resultado.content {
+  margin-top:20px;
+}
+
+#container_resultado, #container_resultadoFinanciamento
+{
+    margin: 0;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.40);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #fafafa;
+    line-height:30px;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+#container_resultadoFinanciamento {
+ display:none;
+}
+
+.container_financiamento
+{
+    width: 900px;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-top:40px;
+}
+
+.showCalculaPreco
+{
+    color: #555;
+    height:400px;
+    width:33%;
+    padding-left:10px;
+    font-family:monospace;
+    font-weight: bold;
+}
+
+.showCalculaFinanciamento
+{
+    color: #555;;
+    height: 400px;
+    width: 33%;
+    font-family: monospace;
+    font-weight:600;
+    font-stretch: condensed;
+}
+
+#container_resultadoFinanciamento #zona2 {
+  border-left:2px black solid;
+  border-right: 2px black solid;
+}
+
+#msg {
+    font-style:italic;
+    font-size:smaller;
+}
+#situacao {
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media all and (max-width: 600px) {
+
+    input[type=submit], input[type=reset] {
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .radio {
+        margin-left:20px;
+    }
+    #container_resultado {
+        margin: 10px 0;
+    }
+
+    #btnReset {
+      margin-bottom:30px;
+    }
+}
+
+/* MEDIA QUERIES V */
+
+@media all and (max-width:736px) { 
+  
+
+  .navbar {
+           
+    display: none;
+    margin-top:70px;
+    align-items:center ;
+    background-color: rgb(83, 83, 83);
+    margin-right:40px;
+    width: 35vw;
+    border:4px solid #3a3838;
+    flex-direction: column;
+  }
+
+
+  .navbar a {
+    padding:10px 0;
+  }
+
+ .box {
+   width: 100%;
+   border:#c4c4c4 1px solid;
+   font-weight: normal;
+ }
+
+ #lnk_contactInfo {
+   font-weight: normal;
+ }
+
+
+ .navbar_dropdown_button {
+   width:100%;
+   height:37.33px;
+   font-weight: normal;
+   cursor: pointer;
+ }
+
+ .box a {
+   display: block;
+   width:90%;
+   padding:0;
+ }
+
+  #navbar_dropdown_button_saved {
+    background-color: #cd1232;
+  }
+  
+  #menu {
+    display:block;
+    cursor:pointer;
+  }
+
+  #lnk_franchising, #lnk_employment, #lnk_propertyAppraisal, #lnk_warranty, #lnk_development, #lnk_moreAdvantages {
+    display: none;
+  }
+}
+
+@media all and (max-width:1020px){
+ .footer-social {
+    position: relative;
+  }
+
+  .showCalculaFinanciamento
+  {
+  text-align: start;
+  font-size:15px;
+  line-height:25px;
+  }
+}
+
+@media all and (max-width:627px){
+
+  .imagem {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    margin:0 2%;
+    vertical-align:top;
+  }
+  
+  .footer-menu {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content:space-between;
+  }
+
+  .footer-menu > div {
+    margin-bottom: 20px;
+  }
+
+  .caixa {
+    float:none;
+  }
+
+  .terms {
+    max-width: 80%;
+  }
+}
+
+@media all and (max-width:844px){
+  .fim-corpo-create a#create {
+    width:90%;
+    margin-top:20px;
+    max-width: 100% ;
+    padding:17px 0;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(4,150px);
+  }
+
+  .gallery_hover {
+    line-height:15px;
+    font-size:2vw;
+  }
+
+  .showCalculaFinanciamento{
+    line-height:4vw;
+    font-size:15px;
+  }
+
+}
+
+@media all and (max-width:884px) {
+  .search_sort > div{
+    display: none;
+  }
+
+  .options_button button {
+    display: block !important;
+  }
+
+  span.texto-legenda {
+    overflow-y:scroll;
+  }
+
+  #container_financiamento {
+    flex-direction:column;
+    text-align: center;
+  }
+  
+  #formFinanciamento {
+    background-color: whitesmoke;
+    border:none;
+    border-top:2px #3d3d3e solid;
+    padding-top:25px;
+  }
+
+  #contentid.content {
+    background-color:rgb(83, 83, 83);
+    padding:5px 0;
+  }
+
+  #contentid.content label{
+    font-size:11.5px;
+  }
+
+  .form label {
+    text-align:end;
+  }
+
+  .left {
+    text-align: end;
+  }
+
+  #container_resultadoFinanciamento {
+    width: 100%;
+  }
+
+  #btnFinanciamento2 {
+    width:150px;
+  }
+}
+
+@media all and (max-width:652px) {
+  .search_bar_container div {
+    flex-direction: column;
+  }
+  #triangle {
+    display: none;
+  }
+
+  .options_button button {
+    margin-left: 0px;
+  }
+
+  #container_resultado, #container_resultadoFinanciamento
+  {
+    font-size:2.5vw;
+    line-height:5vw;
+    font-stretch: condensed;
+  }
+
+  #container_resultadoFinanciamento{
+    height:60vw;
+  }
+  
+  #container_resultado.content {
+    margin-top:45px;
+  }
+
+  .showCalculaPreco
+  {
+    text-align: start;
+    height: 75vw;
+  }
+
+  .showCalculaFinanciamento
+  {
+    line-height:4vw;
+    font-size:2.5vw;
+  }
+
+  #container_resultado {
+    margin-top:30px;
+  }
+
+  #btnReset {
+    width: 30%;
+    margin:5px 0;
+  }
+
+  #btnFechar {
+    width: 30%;
+    margin:5px 0;
+  }
+
+  #btnCalcularPreco {
+    width: 90%;
+    margin:5px 0;
+    border-radius:0;
+  }
+
+  #btnFinanciamento {
+    width:90%;
+    margin:5px 0;
+    border-radius: 0;
+  }
+}
+
+@media all and (max-width:1024px) {
+  .options_button button {
+    display: none;
+  }
+}
+
+@media all and (max-width:365px) {
+  .search_bar_container input#search, .shearch-button {
+    width:280px;
+  }
+
+  .slogans .pub {
+    font-size:35px;
+  }
+}
+
+@media all and (max-width:409px) {
+  .terms {
+    margin-left:0;
+  }
+}
+
+@media all and (max-width:532px) {
+  .form label {
+    font-size:11px;
+  }
+}
+

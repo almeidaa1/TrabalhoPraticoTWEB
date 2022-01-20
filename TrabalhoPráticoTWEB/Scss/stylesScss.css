@@ -1,0 +1,47 @@
+/* Bloco Frequentes ( Pesquisas Frequentes ) V */
+.bloco-frequentes {
+  background-color: #f7f7f7;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.bloco-frequentes .frequentes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 6.1%;
+}
+
+.bloco-frequentes .frequentes #titulo {
+  font-size: 17px;
+  font-weight: 550;
+  margin-bottom: 30px;
+  color: #212121;
+  display: block;
+}
+
+.bloco-frequentes .frequentes .frequentes-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (28%)[3];
+      grid-template-columns: repeat(3, 28%);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4%;
+}
+
+.bloco-frequentes .frequentes .frequentes-content p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.bloco-frequentes .frequentes .frequentes-content .content1 {
+  padding-bottom: 20px;
+}
+
+.bloco-frequentes .frequentes .frequentes-content .content1 a {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.7em;
+}
+/*# sourceMappingURL=stylesScss.css.map */

@@ -1,0 +1,69 @@
+//Cores
+$cinz-escuro:#212121;
+$cinz-intermedio:#43464b;
+$cinz-claro:#999;
+$cinz-maisclaro:#f7f7f7;
+
+
+//alterar o font-size FAZER ( @include fonts (<size a aplicar>) ) para aplicar
+@mixin fonts ($size) { 
+    font: {
+        size:$size;
+    }
+}
+@mixin max-width {
+    max-width: 1200px;
+    margin:0 auto;
+}
+@mixin paddings ($cima, $baixo, $esquerda, $direita){
+    padding: {
+        top:$cima;
+        bottom:$baixo;
+        left:$esquerda;
+        right:$direita;
+    }
+}
+
+/* Bloco Frequentes ( Pesquisas Frequentes ) V */
+
+.bloco-frequentes {
+    background-color:$cinz-maisclaro;
+    padding: {
+        top:60px;
+        bottom:40px;
+    }
+    .frequentes {
+        @include max-width;
+        padding-left:6.1%;
+        
+
+        #titulo {
+            @include fonts(17px);
+            font-weight: 550;
+            margin-bottom: 30px;
+            color:$cinz-escuro;
+            display:block;
+        }
+        .frequentes-content {
+            display: grid;
+            grid-template-columns: repeat(3, 28%);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 4%;
+            p {
+                @include fonts (14px);
+                font-weight:600;
+                color:$cinz-escuro;
+            }
+            .content1 {
+                padding-bottom: 20px;
+                
+                a {
+                    @include fonts (13px);
+                    color:$cinz-claro;
+                    line-height: 1.7em;
+                }
+            }
+
+        }
+    }
+}

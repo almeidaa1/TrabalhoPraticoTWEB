@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ERA &reg; Imobiliária - Portugal</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="./Scss/stylesScss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <header style="background-image: url('./Imagens/frame0_site_era_de_o_salto2020_en.png');">
+            <div class="header">
+                <a id="lnk_logo" href="https://www.era.pt/">
+                    <img id="logo" src="./Imagens/logo.png" alt="ERA Imobiliária Logo" width="98" height="144">
+                </a>
+                <img src="./Imagens/menu.png" alt="Menu" id="menu">
+                <div class="navbar" id="active">
+                    <a id="lnk_buy" class="highlight box" href="https://www.era.pt/comprar?ob=1&tp=1,2&page=1&ord=3"> Buy </a>
+                    <a id="lnk_rent" class="highlight box" href="https://www.era.pt/arrendar?ob=2&tp=1,2&page=1&ord=3"> Rent </a>
+                    <a id="lnk_sell" class="highlight box" href="https://www.era.pt/vender/quanto-vale-a-minha-casa"> Sell </a>
+                    <a id="lnk_radar" class="highlight box"
+                        href="https://www.era.pt/radar/default.aspx?o=&t=&dd=&cc=&es=&a=&ff=&z=&cp=&nq=&p=&ar=&ca=000000000&ct=00000&or=41&idioma=pt1"> ERA Radar </a>
+                    <div id="navbar_dropdown_careers" class="navbar_dropdown box">
+                        <button id="navbar_dropdown_button " class="navbar_dropdown_button"> Careers </button>
+                        <div id="navbar_dropdown_content" class="navbar_dropdown_content">
+                            <a id="lnk_franchising" class="highlight" href="https://www.era.pt/franchising/?idioma=pt1">Franchising </a>
+                            <a id="lnk_employment" class="highlight" href="https://www.era.pt/carreira/?idioma=pt1"> Employment</a>
+                        </div>
+                    </div>
+                    <div id="navbar_dropdown_advantages" class="navbar_dropdown box">
+                        <button id="navbar_dropdown_button_advantages" class="navbar_dropdown_button"> Advantages </button>
+                        <div id="navbar_dropdown_content" class="navbar_dropdown_content">
+                            <a id="lnk_propertyAppraisal" class="highlight"
+                                href="https://www.era.pt/vantagens/avaliacao.aspx?title=property-appraisal&idioma=pt1"> Property
+                                Appraisal </a>
+                            <a id="lnk_warranty" class="highlight" href="https://www.era.pt/campanhas/era-warranty_pt1_16"> ERA
+                                Warranty </a>
+                            <a id="lnk_development" class="highlight"
+                                href="https://www.era.pt/obranova/default.aspx?title=Developments&idioma=pt1">
+                                ERA New
+                                Developments </a>
+                            <a id="lnk_moreAdvantages" class="highlight"
+                                href="https://www.era.pt/vantagens/campanhas.aspx?title=more-advantages&idioma=pt1"> More
+                                advantages </a>
+                        </div>
+                    </div>
+                    <a id="lnk_contactInfo" class="box"
+                        href="https://www.era.pt/lojas/?dd=&cc=&title=agencies-era-portugal&idioma=pt1"> Contact information
+                    </a>
+                    <div class="icon_bar box">
+                        <div id="navbar_dropdown_saved" class="navbar_dropdown">
+                            <button id="navbar_dropdown_button_saved" class="navbar_dropdown_button"><i class="fa fa-heart-o"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div id="navbar_dropdown_viewd" class="navbar_dropdown">
+                            <button id="navbar_dropdown_button_viewd" class="navbar_dropdown_button"><i class="fa fa-clock-o"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div id="navbar_dropdown_account" class="navbar_dropdown">
+                            <button id="navbar_dropdown_button_account" class="navbar_dropdown_button"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search_bar_container"> <!-- Colocar butoes dentro -->
+                <div class="max-width-1">
+                    <div class="search_sort">
+                        <div> BUY <span>&#8595;</span></div>
+                        <div> PROPERTY TYPE <span>&#8595;</span></div>
+                        <div> ROOMS <span>&#8595;</span></div>
+                    </div>
+                    <div class="search_bar">
+                        <input id="search" type="text" placeholder="Location (Municipality, Parish, Area)" autocomplete="off">
+                        <div id="triangle"></div>
+                        <button id="search_button"> FIND </button>
+                    </div>
+                    <div class="options_button">
+                         <button class="shearch-button"> <i class="fa fa-search"></i> Options </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div>
+        </div>
+        <main class="metade-corpo"> <!-- metade do site (vai conter a Highlights, menu, galeria) a metade -->
+            <div class="selecionar">  
+                <div><h1>HIGHLIGHTS</h1></div>
+                <!-- Menu -->
+                <div class="selecao">
+                    <ul id="selecao_ul">            
+                        <li id="selecao_ul_1" class="selected">all</li>
+                        <li id="selecao_ul_2">era warranty</li>
+                        <li id="selecao_ul_3">exclusive</li>
+                        <li id="selecao_ul_4">developments</li>
+                        <li id="selecao_ul_5">virtual tour</li>
+                    </ul>
+                </div>
+                <!-- Butao Preço Imovel -->
+                <div class="preco-imovel">
+                    <a href="#formulario" id="create">Preço Imóvel</a>
+                </div>
+                <!-- Grid (galeria) -->
+                <div class="container">
+                    <div id="galery" class="gallery">
+                        <div id="img-1" class="img_div">
+                            <img src="./Imagens/apartment-t2-lisboa-parque-das-nacoes-expo-norte_2_1_814176_11100153_6_1_FpofbqEP12axXRyaLsfZ29sbwMFubgiJSdEI8uOYZgHEB8h4ZPpqcw==.jpg" alt="Lisboa, Parque das Nações - Expo Norte" id="img-1" class="img"> 
+                            <div class="gallery_hover">Lisboa, Parque das Nações - Expo Norte</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t2-seixal-seixal-baia_2_1_1177320_14675729_5_1_TGIrLuLCc_SmmgTE7czrhSqpHxhl39GESM9DcuS9CrLEB8h4ZPpqcw==.jpg" alt="Seixal, Seixal Baía" id="img-2" class="img">
+                            <div class="gallery_hover">Seixal, Seixal Baía</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/semi-detached-house-t2-ponta-delgada-feteiras_2_1_1015190_13957908_8_1_xMXVwKf8XNdjGYxX0yfPaNAoqG_xHv1JXzMgWT7Y7VjEB8h4ZPpqcw==.jpg" alt="Ponta Delgada, Feteiras" id="img-3" class="img">
+                            <div class="gallery_hover">Ponta Delgada, Feteiras</div>  
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/house-t7-lagoa-lagoa-e-carvoeiro_2_1_900981_12090091_8_1_6eJfsb9GL9bnhIEru19yeDqYq17VWpl1If_W7Da6N_HEB8h4ZPpqcw==.jpg" alt="Lagoa, Lagoa e Carvoeiro" id="img-4" class="img">
+                            <div class="gallery_hover">Lagoa, Lagoa e Carvoeiro</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/plot-pacos-de-ferreira-frazao-arreigada_2_1_1068116_13579848_3_1_diCSeFcWfaD6PGMqW3mZ9s7UlvUa51EDRarbWrRdgHnEB8h4ZPpqcw==.jpg" alt="Paços de Ferreira, Frazão Arreigada" id="img-5" class="img">
+                            <div class="gallery_hover">Passos de Ferreira, Frazão Arreigada</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/duplex-t2-lisboa-lapa-lisboa_2_1_1146633_14439888_4_1_LStOuats5TFg8_RPgY0G_NxcCorq_gxRbksfbguluy3EB8h4ZPpqcw==.jpg" alt="Lisboa, Lapa, Lisboa" id="img-6" class="img">
+                            <div class="gallery_hover">Lisboa, Lapa</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t3-seixal-paivas_2_1_1118986_14115556_4_1_P0ZwPb7AV2h98IDhFA7+aqvw0DzE+NnZaw7Zn+zdAqPEB8h4ZPpqcw==.jpg" alt="Seixal, Paivas" class="img" id="img-7"></a>
+                            <div class="gallery_hover">Seixal, Paivas</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t2-vila-real-de-santo-antonio-monte-gordo_2_1_532871_14402060_1_1_P6uCBMOgkMa_ccsz1axDfqtqoN0DWt9Ker_BGkJSlKPEB8h4ZPpqcw==.jpg" alt="Vila Real de Santo António, Monte Gordo" class="img" id="img-8"></a>
+                            <div class="gallery_hover">Vila Real de Santo António, Monte</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t2-porto-santo-ildefonso_2_1_1138087_14299326_3_1_A1DUSJSYUcRZdQtzpDrHPLVrYrpZPp+fsJx3+YzOxRrEB8h4ZPpqcw==.jpg" alt="Porto, Santo Ildefonso" class="img" id="img-9">
+                            <div class="gallery_hover">Porto, Santo Ildefonso</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/house-t3-ribeira-brava-ribeira-brava_2_1_1178988_14696638_2_1_NXMt3lwfHWMar0j9B9Jme7yfCxdMzlsztPMytH6cjGbEB8h4ZPpqcw==.jpg" alt="Ribeira Brava, Ribeira Brava" class="img" id="img-10">
+                            <div class="gallery_hover">Ribeira Brava</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/country-house-t2-paredes-de-coura-cossourado-e-linhares_2_1_1112327_14034008_3_1_iHEOZ4D7QR6KClfBSY26+0U86+b_z4qJNklGP8fCNnLEB8h4ZPpqcw==.jpg" alt="Paredes de Coura, Cossourado e Linhares" class="img" id="img-11">
+                            <div class="gallery_hover">Paredes de Coura, Cossourado E</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/house-t4-lisboa-olivais-sul_2_1_1061591_14103439_1_1_4X4rzMr5CwKHo_0M7rD6WEvk4EtdkTOTHrWmmA0XJBzEB8h4ZPpqcw==.jpg" alt="Lisboa, Olivais Sul" class="img" id="img-12">
+                            <div class="gallery_hover">Lisboa, Olivais Sul</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t1-lisboa-lumiar_2_1_1158079_14835082_5_1_MmteyMRxlDbgYf7NKtPLYDq7ts457o3+hJAlC89ERV3EB8h4ZPpqcw==.jpg" alt="Lisboa, Lumiar" class="img" id="img-13">
+                            <div class="gallery_hover">Lisboa, Lumiar</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t3-lisboa-marvila_2_1_1155837_14475218_6_1_FZB9yT1DmloPu6naI1mqr8OYvDT3_bH9YVYCYXjykzPEB8h4ZPpqcw==.jpg" alt="Lisboa, Marvila" class="img" id="img-14">
+                            <div class="gallery_hover">Lisboa, Marvila</div>
+                        </div>
+                        <div class="img_div">
+                            <img src="./Imagens/apartment-t2-seixal-bairro-novo-seixal_2_1_1179088_14694093_8_1_LLcX37fN0i8y4cKGC41fwhaE2jqJCaLxyV8aWEHP0jvEB8h4ZPpqcw==.jpg" alt="Seixal, Bairro Novo / Seixal" class="img" id="img-15">
+                        <div class="gallery_hover">Seixal, Bairro Novo</div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="antefim-corpo"> <!-- bloco que vai conter os slogans, bloco antefinal -->
+            <div class="slogans"> 
+                <!-- texto (publicidade)-->
+                <div class="pub" id="slogan-pub">
+                    People who buy or sell a house with ERA have more advantages
+                </div>
+                <!-- bloco que vai conter os slogans/imagens/links/texto-->
+                <div class="imagens">
+                    <div class="imagem">
+                        <a href="#" class="lnk-1" id="li-1">
+                            <img src="./Imagens/campanhas_16.jpg" alt="" class="i">
+                        </a>
+                        <a href="#" class="lnk-2" id="li-2">
+                            Era Warranty
+                        </a>
+                        <span class="texto-legenda">A warranty offered by ERA for homebuyers that covers unexpected repairs that may occur after the purchase.</span>
+                        <a href="#" class="lnk-3" id="li-3">
+                            Find Out More
+                        </a>
+                    </div>
+                    <div class="imagem">
+                        <a href="#" class="lnk-1" id="li-1">
+                            <img src="./Imagens/era_cert.jpg" alt="" class="i">
+                        </a>
+                        <a href="#" class="lnk-2" id="li-2">
+                            Energy Performance Certificate
+                        </a>
+                        <span class="texto-legenda">ERA Warranty has 1+ advantage: a partnership ERA | EDP which guarantees the Energy Performance Certificate, required for listing your house, and pay it later...</span>
+                        <a href="#" class="lnk-3" id="li-3">
+                            Find Out More
+                        </a>
+                    </div>
+                    <div class="imagem">
+                        <a href="#" class="lnk-1" id="li-1">
+                            <img src="./Imagens/ico_selecao_empreendimentos.jpg" alt="" class="i">
+                        </a>
+                        <a href="#" class="lnk-2" id="li-2">
+                        Era New Developments
+                        </a>
+                        <span class="texto-legenda">This is the largest selection of new developments throughout the country. Projects designed to detail with the most demanding quality standards. A unique...</span>
+                        <a href="#" class="lnk-3" id="li-3">
+                            Find Out More
+                        </a>
+                    </div>
+                    <div class="imagem">
+                        <a href="#" class="lnk-1" id="li-1">
+                            <img src="./Imagens/ico_casa_nova.jpg" alt="" class="i">
+                        </a>
+                        <a href="#" class="lnk-2" id="li-2">
+                            New Homes
+                        </a>
+                        <span class="texto-legenda">An ERA selection of New Homes, for those who prefer to live all the advantages of a newly built home.</span>
+                        <a href="#" class="lnk-3" id="li-3">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="bloco-frequentes">
+            <div class="frequentes">
+                <div class="most-common-shearches"><span id="titulo">Most common shearches</span></div>
+                <div class="frequentes-content">
+                    <div class="content">
+                        <p>Apartments</p>
+                        <a href="#" id="lisboa">Lisboa,</a>
+                        <a href="#" id="amadora">Amadora,</a>
+                        <a href="#" id="sintra">Sintra,</a>
+                        <a href="#" id="almada">Almada,</a>
+                        <a href="#" id="gondomar">Gondomar,</a>
+                        <a href="#" id="maia">Maia,</a>
+                        <a href="#" id="porto">Porto,</a>
+                        <a href="#" id="seixal">Seixal,</a>
+                        <a href="#" id="cascais">Cascais,</a>
+                        <a href="#" id="guarda">Guarda</a>
+                    </div>
+                    <div class="content">
+                        <p>Houses</p>
+                        <a href="#" id="ponta delgada">Ponta Delgada,</a>
+                        <a href="#" id="bragança">Bragança,</a>
+                        <a href="#" id="évora">Évora,</a>
+                        <a href="#" id="almada">Almada,</a>
+                        <a href="#" id="mafra">Mafra,</a>
+                        <a href="#" id="vila nova de gaia">Vila Nova de Gaia,</a>
+                        <a href="#" id="matosinhos">Matosinhos,</a>
+                        <a href="#" id="sintra">Sintra,</a>
+                        <a href="#" id="amares">Amares,</a>
+                        <a href="#" id="azambuja">Azambuja</a>
+                    </div>
+                    <div class="content">
+                        <p>Lands</p>
+                        <a href="#" id="águeda">Águeda,</a>
+                        <a href="#" id="ponte de lima">Ponte de Lima,</a>
+                        <a href="#" id="proença-a-nova">Proença-a-Nova,</a>
+                        <a href="#" id="barcelos">Barcelos,</a>
+                        <a href="#" id="amares">Amares,</a>
+                        <a href="#" id="esposende">Esposende,</a>
+                        <a href="#" id="marco de canaveses">Marcos de Canaveses,</a>
+                        <a href="#" id="guarda">Guarda,</a>
+                        <a href="#" id="tomar">Tomar,</a>
+                        <a href="#" id="alcoutim">Alcoutim</a>
+                    </div>
+                    <div class="content">
+                        <p>Retail</p>
+                        <a href="#" id="anadia">Anadia,</a>
+                        <a href="#" id="guarda">Guarda,</a>
+                        <a href="#" id="bragança">Bragança,</a>
+                        <a href="#" id="braga">Braga,</a>
+                        <a href="#" id="lisboa">Lisboa,</a>
+                        <a href="#" id="oliveira do bairo">Oliveira do Bairro,</a>
+                        <a href="#" id="figueira da foz">Figueira da Foz,</a>
+                        <a href="#" id="lamego">Lamego,</a>
+                        <a href="#" id="lourinhã">Lourinhã,</a>
+                        <a href="#" id="faro">Faro</a>
+                    </div>
+                    <div class="content">
+                        <p>Farm And Estate</p>
+                        <a href="#" id="lisboa">Lisboa,</a>
+                        <a href="#" id="ribeira grande">Ribeira Grande,</a>
+                        <a href="#" id="penamacor">Penamacor,</a>
+                        <a href="#" id="évora">Évora,</a>
+                        <a href="#" id="castelo branco">Castelo Branco,</a>
+                        <a href="#" id="lagoa(são miguel)">Lagoa (São Miguel),</a>
+                        <a href="#" id="odemira">Odemira,</a>
+                        <a href="#" id="felgueiras">Felgueiras,</a>
+                        <a href="#" id="ponta delgada">Ponta Delgada,</a>
+                        <a href="#" id="grândola">Grândola</a>
+                    </div>
+                    <div class="content">
+                        <p>Property with Business</p>
+                        <a href="#" id="trofa">Trofa,</a>
+                        <a href="#" id="ponta delgada">Ponta Delgada,</a>
+                        <a href="#" id="vila real">Vila Real,</a>
+                        <a href="#" id="lousada">Lousada,</a>
+                        <a href="#" id="santarém">Santarém,</a>
+                        <a href="#" id="bragança">Bragança,</a>
+                        <a href="#" id="palmela">Palmela,</a>
+                        <a href="#" id="miranda do douro">Miranda do Douro,</a>
+                        <a href="#" id="póvoa de varzim">Póvoa de Varzim,</a>
+                        <a href="#" id="terras de bouro">Terras de Bouro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="create-listing">
+            <div class="fim-corpo-create">
+                <span id="sell-your-property">Sell your property</span>
+                <span id="create-a-listing-text">Create a listing to sell or rent your property at our website.</span>
+                <a href="#" id="create">Create Listing</a>
+            </div>
+        </footer>
+        <footer class="media">
+            <div class="max-width-1">
+                <div class="margin">
+                    <div class="footer-menu">
+                        <div class="properties">
+                            <a href="#" id="title">Properties</a>
+                            <div class="elementos">
+                                <a href="#" id="ele">Buy</a>
+                                <a href="#" id="ele">Rent</a>
+                                <a href="#" id="ele">Sell</a>
+                                <a href="#" id="ele">ERA Radar</a>
+                                <a href="#" id="ele">What are you looking for?</a>
+                            </div>
+                        </div>
+                        <div class="era-portugal">
+                            <a href="#" id="title">Era Portugal</a>
+                            <div class="elementos">
+                                <a href="#" id="ele">About Us</a>
+                                <a href="#" id="ele">Offices</a>
+                                <a href="#" id="ele">Careers</a>
+                                <a href="#" id="ele">Help us improve</a>
+                                <a href="#" id="ele">Contact</a>
+                            </div>
+                        </div>
+                        <div class="franchising">
+                            <a href="#" id="title">Franchising</a>
+                            <div class="elementos">
+                                <a href="#" id="ele">We want the best</a>
+                                <a href="#" id="ele">Leadership Model</a>
+                                <a href="#" id="ele">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="advantages">
+                            <a href="#" id="title">Advantages</a>
+                            <div class="elementos">
+                                <a href="#" id="ele">Property Appraisal</a>
+                                <a href="#" id="ele">Era Warranty</a>
+                                <a href="#" id="ele">Era New Developments</a>
+                                <a href="#" id="ele">More Advantages</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a href="#" id="title">Media</a>
+                            <div class="elementos">
+                                <a href="#" id="ele">ERA Business Accelerator</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <span id="title">Follow us</span>
+                        <div class="redes-sociais">
+                            <a href="#" id="lnk-social">
+                                <img src="./Imagens/face.png" alt="Facebook">
+                            </a>
+                            <a href="#" id="lnk-social">
+                                <img src="./Imagens/linkedin.png" alt="Linkedin">
+                            </a>
+                            <a href="#" id="lnk-social">
+                                <img src="./Imagens/youtube.png" alt="Youtube">
+                            </a>
+                            <a href="#" id="lnk-social">
+                                <img src="./Imagens/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#" id="lnk-social">
+                                <img src="./Imagens/pinterest.png" alt="Pinterest">
+                            </a>
+                            <a href="#" id="lnk-social"> 
+                                <img src="./Imagens/messenger.png" alt="Messenger">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="linguagem">
+            <div class="max-width-1">
+                <div class="margin">
+                    <div class="logo-era">
+                        <img src="./Imagens/logo.png" alt="Era Logo" width="47px" height="60px">
+                    </div>
+                    <div class="terms">
+                        © 2020. ERA Portugal .
+                        <a href="#">General terms</a>
+                        .
+                        <a href="#">Resolução Alternativa de Litígios</a>
+                        .
+                        <a href="#">Privacy Policy</a>
+                        .
+                        <a href="#">Complaints Book</a>
+                        All right reserved . Powered by
+                        <a href="">M&A Digital</a>
+                    </div>
+                    <div class="caixa">
+                        <div class="idioma">
+                            <img src="./Imagens/globe.png" alt="globe" id="globe">
+                            <span id="lingua">English</span>
+                            <img src="./Imagens/triangle_arrow.png" alt="arrow" id="arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Começa aqui o formulario -->
+        <footer class="imovel">
+            <a name="formulario"></a> 
+            <div class="max-width-form">
+                <div class="container_priceCalc">
+                    <div class = form>
+                        <div class="titulo">Cálculo do Preço do Imóvel</div>
+                        <form id="formPreco">
+                            <div class="content">
+                                <div class="left">
+                                    <label for="Tipologia">Tipologia</label>
+                                </div>
+                                <div class="right">
+                                    <select name="Tipologia">
+                                        <option value="1"> T0 </option>
+                                        <option value="2"> T1 </option>
+                                        <option value="3"> T2 </option>
+                                        <option value="4"> T3 </option>
+                                        <option value="5"> T4 </option>
+                                        <option value="6"> T5 </option>
+                                        <option value="7"> T6 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="left">
+                                    <label for="area">Área (m²)</label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" id="area" value="0" min="1" step="0.5" required>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="left">
+                                    <label for="idade">Idade</label>
+                                </div>
+                                <div class="right">
+                                    <input id="idade" type="range" name="rangeInput" min="1" max="30" value="1" onchange="mostrarIdade()">
+                                    <span id="textInput"></span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="left">
+                                    <label for="garagem">Garagem</label>
+                                </div>
+                                <div class="radio">
+                                    <div>
+                                        <input type="radio" id="garagemN" name="garagem" checked> <label for="garagemN">Não</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="garagemS" name="garagem"> <label for="garagemS">Sim</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="left">
+                                    <label for="Proximidade">Proximidade de Transportes Públicos </label>
+                                </div>
+                                <div class="col-65 radio">
+                                    <div>
+                                        <input type="radio" id="proximidadeN" name="proximidade" checked> <label for="proximidadeN">Não</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="proximidadeS" name="proximidade"> <label for="proximidadeS">Sim</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <input type="button" id="btnFinanciamento" value="Financiamento" >
+                                <input type="button" id="btnCalcularPreco" value="Calcular Preço do Imóvel">
+                                <input type="submit" id="btnFechar" value="Fechar">
+                                <input type="reset" id="btnReset" value="Limpar">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="container_resultado" class="content">
+                        <div id="zona1">
+                        </div>
+                        <div id="zona2">
+                        </div>
+                        <div id="zona3">
+                        </div>
+                    </div>
+                    <div id="container_financiamento">
+                        <form id="formFinanciamento">
+                            <div class="content" id="contentid">
+                                <div class="left">
+                                    <label for="preçoTotal">Preço Total do Imóvel: </label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" id="preçoTotal" value="100" min="100" step="100" required>
+                                </div>
+                            </div>
+                            <div class="content" id="contentid">
+                                <div class="left">
+                                    <label for="valorEmprestimo">Valor do Empréstimo: </label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" id="valorEmprestimo" value="100" min="100" step="100" required>
+                                </div>
+                            </div>
+                            <div class="content" id="contentid">
+                                <div class="left">
+                                    <label for="prazoPagamento">Prazo Pagamento (anos): </label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" id="prazoPagamento" value="1" min="1" max="40" step="1" required>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <input type="button" id="btnFinanciamento2" value="Calcular">
+                            </div>
+                        </form>
+                        <div id="container_resultadoFinanciamento" class="content">
+                            <div id="zona1">
+                            </div>
+                            <div id="zona2">
+                            </div>
+                            <div id="zona3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="Era.js"></script>
+</html>
