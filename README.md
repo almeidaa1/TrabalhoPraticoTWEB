@@ -1,4 +1,4 @@
-Trabalho Prático proposto a Tecnologias Web ( Replica do visual de uma site ( ERA Imobiliária ) e algumas funcionalidades do site )
+## Trabalho Prático proposto a Tecnologias Web ( Visual e algumas funcionalidades)
 
--Foi usado : 
-HTML / CSS / SASS / JS
+### - Foi usado : 
+> ### HTML / CSS / SASS / JS
