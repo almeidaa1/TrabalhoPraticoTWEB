@@ -1,4 +1,4 @@
-## Trabalho Prático proposto a Tecnologias Web ( Visual )
+## Trabalho Prático proposto a Tecnologias Web
 
 ### - Foi usado : 
 > ### HTML / CSS / SASS / JS
